@@ -10,5 +10,5 @@ public class UserHomeDocument
     [JsonIgnore]
     public ulong Xuid { get; set; }
     public required Home Home { get; set; }
-    public List<int> ClearMissionIds { get; set; } = [];
+    public List<uint> ClearMissionIds { get; set; } = [];
 }
