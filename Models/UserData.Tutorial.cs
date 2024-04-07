@@ -15,92 +15,67 @@ public partial class UserData
                 Id = xuid,
                 Name = "チュートリアル中",
                 Comment = "よろしくお願いします！",
-                Exp = 0,
-                MainDeckSlot = 0,
-                FavoriteMasterCardId = 0,
-                FavoriteCardEvolve = 0,
-                GuestSmileMasterCardId = 0,
-                GuestCoolMasterCardId = 0,
-                GuestPureMasterCardId = 0,
                 FriendRequestDisabled = true,
                 MasterTitleIds = [0, 0],
                 ProfileSettings = [1, 2, 3, 4, 5, 6, 7],
-                SifUserId = 0,
                 LastLoginTime = currentUnixTimeSeconds
             },
-            Gem = new Gem
-            {
-                Total = 0,
-                Charge = 0,
-                Free = 0
-            },
-            CardList = [],
+            Gem = new Gem(),
             DeckList =
             [
                 new Deck
                 {
                     Slot = 1,
-                    LeaderRole = 0,
                     MainCardIds = [0, 0, 0, 0, 0, 0, 0, 0, 0]
                 },
                 new Deck
                 {
                     Slot = 2,
-                    LeaderRole = 0,
                     MainCardIds = [0, 0, 0, 0, 0, 0, 0, 0, 0]
                 },
                 new Deck
                 {
                     Slot = 3,
-                    LeaderRole = 0,
                     MainCardIds = [0, 0, 0, 0, 0, 0, 0, 0, 0]
                 },
                 new Deck
                 {
                     Slot = 4,
-                    LeaderRole = 0,
                     MainCardIds = [0, 0, 0, 0, 0, 0, 0, 0, 0]
                 },
                 new Deck
                 {
                     Slot = 5,
-                    LeaderRole = 0,
                     MainCardIds = [0, 0, 0, 0, 0, 0, 0, 0, 0]
                 },
                 new Deck
                 {
                     Slot = 6,
-                    LeaderRole = 0,
                     MainCardIds = [0, 0, 0, 0, 0, 0, 0, 0, 0]
                 },
                 new Deck
                 {
                     Slot = 7,
-                    LeaderRole = 0,
                     MainCardIds = [0, 0, 0, 0, 0, 0, 0, 0, 0]
                 },
                 new Deck
                 {
                     Slot = 8,
-                    LeaderRole = 0,
                     MainCardIds = [0, 0, 0, 0, 0, 0, 0, 0, 0]
                 },
                 new Deck
                 {
                     Slot = 9,
-                    LeaderRole = 0,
                     MainCardIds = [0, 0, 0, 0, 0, 0, 0, 0, 0]
                 },
                 new Deck
                 {
                     Slot = 10,
-                    LeaderRole = 0,
                     MainCardIds = [0, 0, 0, 0, 0, 0, 0, 0, 0]
                 },
                 new Deck
                 {
                     Slot = 100,
-                    LeaderRole = 0,
                     MainCardIds = [0, 0, 0, 0, 0, 0, 0, 0, 0]
                 }
             ],
@@ -109,13 +84,6 @@ public partial class UserData
                 StaminaValue = 100,
                 LastUpdatedTime = currentUnixTimeSeconds
             },
-            CharacterList = [],
-            TutorialStep = 0,
-            ItemList = [],
-            PointList = [],
-            StoryList = [],
-            LiveList = [],
-            LiveMissionList = [],
             MasterMusicIds =
             [
                 1001,
@@ -756,15 +724,7 @@ public partial class UserData
                 9031,
                 9032
             ],
-            EventPointList = [],
-            StartTime = null,
-            MasterTitleIds = [],
-            LotteryList = [],
-            ShopList = [],
-            FunctionLockList = [],
             Movie = (Movie?)null,
-            SubscriptionList = [],
-            Membership = new List<Membership>()
         };
     }
 }
