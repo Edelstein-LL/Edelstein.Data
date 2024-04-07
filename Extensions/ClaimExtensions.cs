@@ -1,7 +1,7 @@
 using System.Globalization;
 using System.Security.Claims;
 
-namespace Edelstein.Data.Transport;
+namespace Edelstein.Data.Extensions;
 
 public static class ClaimExtensions
 {
