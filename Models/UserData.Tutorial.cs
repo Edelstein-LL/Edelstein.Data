@@ -15,6 +15,7 @@ public partial class UserData
                 Id = xuid,
                 Name = "チュートリアル中",
                 Comment = "よろしくお願いします！",
+                MainDeckSlot = 1,
                 FriendRequestDisabled = true,
                 MasterTitleIds = [0, 0],
                 ProfileSettings = [1, 2, 3, 4, 5, 6, 7],
