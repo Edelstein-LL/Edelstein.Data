@@ -15,7 +15,7 @@ public static class EnumerableExtensions
         if (count == T.Zero)
             yield break;
 
-        while (start < max)
+        while (start <= max)
         {
             yield return start;
             start++;
