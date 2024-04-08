@@ -9,5 +9,6 @@ public class UserMissionsDocument
     [BsonId]
     [JsonIgnore]
     public ulong Xuid { get; set; }
+
     public List<Mission> MissionList { get; set; } = [];
 }

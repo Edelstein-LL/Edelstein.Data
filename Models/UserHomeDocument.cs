@@ -9,6 +9,7 @@ public class UserHomeDocument
     [BsonId]
     [JsonIgnore]
     public ulong Xuid { get; set; }
+
     public required Home Home { get; set; }
     public List<uint> ClearMissionIds { get; set; } = [];
 }

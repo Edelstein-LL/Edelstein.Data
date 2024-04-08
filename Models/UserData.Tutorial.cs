@@ -725,7 +725,7 @@ public partial class UserData
                 9031,
                 9032
             ],
-            Movie = (Movie?)null,
+            Movie = (Movie?)null
         };
     }
 }
