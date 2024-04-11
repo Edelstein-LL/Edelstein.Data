@@ -4,5 +4,6 @@ namespace Edelstein.Data.Models;
 
 public record LotteryDrawResult(
     List<LotteryItem> LotteryItems,
-    List<Card> Cards
+    List<Card> Cards,
+    int Lightsticks
 );
