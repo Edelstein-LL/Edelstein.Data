@@ -19,5 +19,5 @@ public class User
     public long LastLoginTime { get; set; }
     public ulong SifUserId { get; set; }
     public ulong SsUserId { get; set; }
-    public string? Birthday { get; set; }
+    public string Birthday { get; set; } = "";
 }
