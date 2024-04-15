@@ -2,7 +2,7 @@ using System.Collections.Frozen;
 
 namespace Edelstein.Data.Constants;
 
-public static class MasterMusicIds
+public static class MasterStampIds
 {
     private static FrozenSet<uint>? _ids;
 
@@ -17,3 +17,4 @@ public static class MasterMusicIds
         _ids = ids.ToFrozenSet();
     }
 }
+
