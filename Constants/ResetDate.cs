@@ -11,12 +11,12 @@ public static class ResetDate
         }
     }
 
-    public static DateTimeOffset Previous
+    public static DateTimeOffset Last
     {
         get
         {
             DateTimeOffset currentTime = DateTimeOffset.UtcNow;
-            return PreviousOf(currentTime);
+            return LastOf(currentTime);
         }
     }
 
@@ -24,7 +24,7 @@ public static class ResetDate
         new DateTimeOffset(dateTimeOffset.Year, dateTimeOffset.Month, dateTimeOffset.Day, 0, 0,
             0, TimeSpan.Zero).AddDays(1);
 
-    public static DateTimeOffset PreviousOf(DateTimeOffset dateTimeOffset) =>
+    public static DateTimeOffset LastOf(DateTimeOffset dateTimeOffset) =>
         new(dateTimeOffset.Year, dateTimeOffset.Month, dateTimeOffset.Day, 0, 0,
             0, TimeSpan.Zero);
 }
