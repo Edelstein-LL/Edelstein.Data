@@ -1,3 +1,7 @@
+using Edelstein.Data.Msts;
+
+using System.Text.Json.Serialization;
+
 namespace Edelstein.Data.Models.Components;
 
 public class Live
@@ -9,4 +13,6 @@ public class Live
     public int MaxCombo { get; set; }
     public bool AutoEnable { get; set; }
     public int UpdatedTime { get; set; }
+    [JsonIgnore]
+    public List<LimitedReward> LimitedRewards { get; set; } = [];
 }

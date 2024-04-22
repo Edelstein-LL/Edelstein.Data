@@ -46,4 +46,7 @@ public partial class UserData
 
     [BsonSerializer(typeof(OneOfListOrObjectBsonSerializer<Membership>))]
     public OneOf<List<Membership>, Membership> Membership { get; set; } = new List<Membership>();
+
+    [JsonIgnore]
+    public CurrentLiveData? CurrentLive { get; set; } = null;
 }
