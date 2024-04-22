@@ -17,4 +17,3 @@ public static class MasterStampIds
         _ids = ids.ToFrozenSet();
     }
 }
-

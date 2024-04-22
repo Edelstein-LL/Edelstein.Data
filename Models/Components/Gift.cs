@@ -5,7 +5,7 @@ public class Gift
     public ulong Id { get; set; }
     public bool IsReceive { get; set; }
     public required string ReasonText { get; set; }
-    public Edelstein.Data.Msts.RewardType RewardType { get; set; }
+    public Msts.RewardType RewardType { get; set; }
     public uint Value { get; set; }
     public int Level { get; set; }
     public int Amount { get; set; }

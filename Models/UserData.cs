@@ -27,8 +27,10 @@ public partial class UserData
     public List<Story> StoryList { get; set; } = [];
     public List<Live> LiveList { get; set; } = [];
     public List<LiveMission> LiveMissionList { get; set; } = [];
+
     [BsonIgnore]
     public IEnumerable<uint> MasterMusicIds { get; set; } = Constants.MasterMusicIds.Get();
+
     public List<Group> GroupList { get; set; } = [];
     public List<uint> MasterStampIds { get; set; } = [];
     public uint TutorialStep { get; set; }

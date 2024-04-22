@@ -13,6 +13,7 @@ public class Live
     public int MaxCombo { get; set; }
     public bool AutoEnable { get; set; }
     public int UpdatedTime { get; set; }
+
     [JsonIgnore]
     public List<LimitedReward> LimitedRewards { get; set; } = [];
 }
