@@ -1,8 +1,14 @@
-namespace Edelstein.Data.Models.Components;
+using System.Text.Json.Serialization;
+
+namespace Edelstein.Data.Models;
 
 public class Gift
 {
     public ulong Id { get; set; }
+
+    [JsonIgnore]
+    public ulong UserId { get; set; }
+
     public bool IsReceive { get; set; }
     public required string ReasonText { get; set; }
     public Msts.RewardType RewardType { get; set; }

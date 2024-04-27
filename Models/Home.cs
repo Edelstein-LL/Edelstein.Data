@@ -4,12 +4,12 @@ namespace Edelstein.Data.Models;
 
 public partial class Home
 {
-    public List<Gift> GiftList { get; set; } = [];
+    public IEnumerable<Gift> GiftList { get; set; } = [];
     public int PendingFriendCount { get; set; }
     public int ClearMissionCount { get; set; }
     public int ClearBeginnerMissionCount { get; set; }
-    public byte BeginnerMissionComplete { get; set; }
-    public byte NewAnnouncementFlag { get; set; }
+    public bool BeginnerMissionComplete { get; set; }
+    public bool NewAnnouncementFlag { get; set; }
     public List<Information> InformationList { get; set; } = [];
     public List<PresetData> PresetSetting { get; set; } = [];
     public int NotClearedDailyMissionCount { get; set; }
