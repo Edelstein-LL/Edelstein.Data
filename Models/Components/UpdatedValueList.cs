@@ -7,9 +7,9 @@ public class UpdatedValueList
     public List<CardSub> CardSubList { get; set; } = [];
     public List<Item> ItemList { get; set; } = [];
     public List<Point> PointList { get; set; } = [];
-    public List<uint> MasterTitleIds { get; set; } = [];
+    public HashSet<uint> MasterTitleIds { get; set; } = [];
     public List<uint> MasterMusicIds { get; set; } = [];
-    public List<uint> MasterStampIds { get; set; } = [];
+    public HashSet<uint> MasterStampIds { get; set; } = [];
     public List<EventPoint> EventPointList { get; set; } = [];
     public Stamina? Stamina { get; set; } = null;
     public List<uint> MasterMovieIds { get; set; } = [];

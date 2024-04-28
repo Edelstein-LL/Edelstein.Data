@@ -20,8 +20,8 @@ public partial class UserData
     public List<Card> CardList { get; set; } = [];
     public List<CardSub> CardSubList { get; set; } = [];
     public List<Deck> DeckList { get; set; } = [];
-    public List<Item> ItemList { get; set; } = [];
-    public List<Point> PointList { get; set; } = [];
+    public LinkedList<Item> ItemList { get; set; } = [];
+    public LinkedList<Point> PointList { get; set; } = [];
     public required Stamina Stamina { get; set; }
     public List<Character> CharacterList { get; set; } = [];
     public List<Story> StoryList { get; set; } = [];
