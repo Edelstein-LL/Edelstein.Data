@@ -1,3 +1,5 @@
+using Edelstein.Data.Msts;
+
 namespace Edelstein.Data.Models.Components;
 
 public class Reward
