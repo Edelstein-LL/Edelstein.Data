@@ -16,9 +16,12 @@ public partial class UserData
                 Name = "チュートリアル中",
                 Comment = "よろしくお願いします！",
                 MainDeckSlot = 1,
-                FriendRequestDisabled = true,
                 MasterTitleIds = [0, 0],
-                ProfileSettings = [1, 2, 3, 4, 5, 6, 7],
+                ProfileSettings =
+                [
+                    ProfileType.UserId, ProfileType.LastLoginDate, ProfileType.ClearLiveNumber, ProfileType.FullComboLiveNumber,
+                    ProfileType.AllPerfectLiveNumber, ProfileType.GuestMember
+                ],
                 LastLoginTime = currentUnixTimeSeconds
             },
             Gem = new Gem(),

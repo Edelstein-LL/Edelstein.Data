@@ -1,3 +1,5 @@
+using MongoDB.Bson.Serialization.Attributes;
+
 namespace Edelstein.Data.Models.Components;
 
 public class User
@@ -13,9 +15,10 @@ public class User
     public uint GuestSmileMasterCardId { get; set; }
     public uint GuestCoolMasterCardId { get; set; }
     public uint GuestPureMasterCardId { get; set; }
-    public bool FriendRequestDisabled { get; set; }
+    [BsonIgnore]
+    public bool FriendRequestDisabled => !ProfileSettings.Contains(ProfileType.FriendRequest);
     public List<uint> MasterTitleIds { get; set; } = [];
-    public List<int> ProfileSettings { get; set; } = [];
+    public List<ProfileType> ProfileSettings { get; set; } = [];
     public long LastLoginTime { get; set; }
     public ulong SifUserId { get; set; }
     public ulong SsUserId { get; set; }

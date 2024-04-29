@@ -17,7 +17,6 @@ public partial class Friend
                 GuestSmileMasterCardId = 10010013,
                 GuestCoolMasterCardId = 10010013,
                 GuestPureMasterCardId = 10010013,
-                FriendRequestDisabled = true,
                 MasterTitleIds = [3000001, 0],
                 LastLoginTime = DateTimeOffset.UtcNow.ToUnixTimeSeconds()
             },
