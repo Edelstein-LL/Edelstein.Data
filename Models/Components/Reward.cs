@@ -10,5 +10,5 @@ public class Reward
     public int Amount { get; set; }
     public ExchangeItem? ExchangeItem { get; set; }
     public DropInfo? DropInfo { get; set; }
-    public int GiveType { get; set; }
+    public GiveType GiveType { get; set; }
 }
