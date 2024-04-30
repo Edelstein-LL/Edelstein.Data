@@ -2,7 +2,7 @@ using Edelstein.Data.Models.Components;
 
 namespace Edelstein.Data.Models;
 
-public partial class Home
+public class Home
 {
     public IEnumerable<Gift> GiftList { get; set; } = [];
     public int PendingFriendCount { get; set; }

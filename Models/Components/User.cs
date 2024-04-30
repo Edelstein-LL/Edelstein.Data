@@ -15,8 +15,10 @@ public class User
     public uint GuestSmileMasterCardId { get; set; }
     public uint GuestCoolMasterCardId { get; set; }
     public uint GuestPureMasterCardId { get; set; }
+
     [BsonIgnore]
     public bool FriendRequestDisabled => !ProfileSettings.Contains(ProfileType.FriendRequest);
+
     public List<uint> MasterTitleIds { get; set; } = [];
     public List<ProfileType> ProfileSettings { get; set; } = [];
     public long LastLoginTime { get; set; }
