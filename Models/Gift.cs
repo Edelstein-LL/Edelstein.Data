@@ -11,6 +11,9 @@ public class Gift
     [JsonIgnore]
     public ulong UserId { get; set; }
 
+    [JsonIgnore]
+    public ulong ReceivedId { get; set; }
+
     public bool IsReceive { get; set; }
     public required string ReasonText { get; set; }
     public RewardType RewardType { get; set; }
