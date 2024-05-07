@@ -6,5 +6,5 @@ public static class SequenceNames
     public const string CardIds = "cardIds";
     public const string ItemIds = "itemIds";
     public const string GiftIds = "giftIds";
-    public const string ReceivedGiftIds = "receivedGiftIds";
+    public const string GiftReceiveIds = "giftReceiveIds";
 }
