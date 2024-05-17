@@ -17,7 +17,7 @@ public class UserHomeDocument
         new PresetData { Slot = 4 }
     ];
 
-    public bool HasUnreadAnnouncements { get; set; } = true;
+    public bool HasUnreadAnnouncements { get; set; } = false;
 
     public ChatStorageDocument ChatStorage { get; set; } = new();
 }
