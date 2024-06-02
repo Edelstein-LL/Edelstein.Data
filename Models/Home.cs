@@ -1,7 +1,4 @@
 using Edelstein.Data.Models.Components;
-using Edelstein.Data.Serialization.Json;
-
-using System.Text.Json.Serialization;
 
 namespace Edelstein.Data.Models;
 
@@ -21,8 +18,3 @@ public class Home
     public byte ActiveFriend { get; set; }
     public List<uint> SerialCodeIdList { get; set; } = [];
 }
-
-[JsonSourceGenerationOptions(Converters = [typeof(BooleanToIntegerJsonConverter), typeof(OneOfListOrObjectJsonConverterFactory)],
-    PropertyNamingPolicy = JsonKnownNamingPolicy.SnakeCaseLower)]
-[JsonSerializable(typeof(Home))]
-public partial class HomeJsonSerializerContext : JsonSerializerContext;
