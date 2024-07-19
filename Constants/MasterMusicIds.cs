@@ -9,7 +9,7 @@ public static class MasterMusicIds
     public static IEnumerable<uint> Get() =>
         _ids ?? FrozenSet<uint>.Empty;
 
-    public static void Set(IEnumerable<uint> ids)
+    public static void Load(IEnumerable<uint> ids)
     {
         if (_ids != null)
             throw new Exception("Ids can only be set one time");
