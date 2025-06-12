@@ -947,7 +947,7 @@ public static class MasterConstants
             failedToReadConstantNames.Add("PICK_SCORE_BONUS_NUMERATOR");
 
         if (TryGetConstant("PLAYER_RANKS_TRACKING_LIST", out string? readPlayerRanksTrackingList) &&
-            SlashDelimitedListParser.TryParse(readPlayerRanksTrackingList, out List<int>? listReadPlayerRanksTrackingList))
+            SlashDelimitedListParser.TryParse(readPlayerRanksTrackingList, out List<int> listReadPlayerRanksTrackingList))
             PlayerRanksTrackingList = listReadPlayerRanksTrackingList;
         else
             failedToReadConstantNames.Add("PLAYER_RANKS_TRACKING_LIST");
@@ -1228,7 +1228,7 @@ public static class MasterConstants
             failedToReadConstantNames.Add("TUTORIAL_COMPLETE");
 
         if (TryGetConstant("TUTORIAL_EXCLUDE_MEMBER", out string? readTutorialExcludeMember) &&
-            SlashDelimitedListParser.TryParse(readTutorialExcludeMember, out List<int>? listReadTutorialExcludeMember))
+            SlashDelimitedListParser.TryParse(readTutorialExcludeMember, out List<int> listReadTutorialExcludeMember))
             TutorialExcludeMember = listReadTutorialExcludeMember;
         else
             failedToReadConstantNames.Add("TUTORIAL_EXCLUDE_MEMBER");
