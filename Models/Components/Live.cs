@@ -8,8 +8,6 @@ namespace Edelstein.Data.Models.Components;
 
 public class Live
 {
-    private Dictionary<uint, int>? _remainingLimitedRewards;
-
     public uint MasterLiveId { get; set; }
     public LiveLevel Level { get; set; }
     public int ClearCount { get; set; }
@@ -18,20 +16,14 @@ public class Live
     public bool AutoEnable { get; set; }
     public int UpdatedTime { get; set; }
 
-    [JsonIgnore]
-    public List<LimitedReward> LimitedRewards { get; set; } = [];
+    [BsonElement("receivedLimitedRewards")]
+    private Dictionary<string, int> ReceivedLimitedRewardsDb
+    {
+        get => ReceivedLimitedRewards.ToDictionary(x => x.Key.ToString(), x => x.Value);
+        set => ReceivedLimitedRewards = value.ToDictionary(x => UInt32.Parse(x.Key), x => x.Value);
+    }
 
-    // TODO: Compatibility stub
-    // TODO: Rework to ReceivedLimitedRewards
     [JsonIgnore]
     [BsonIgnore]
-    public Dictionary<uint, int> RemainingLimitedRewards
-    {
-        get
-        {
-            _remainingLimitedRewards ??= LimitedRewards.ToDictionary(x => x.MasterRewardId, x => x.Remaining);
-
-            return _remainingLimitedRewards;
-        }
-    }
+    public Dictionary<uint, int> ReceivedLimitedRewards { get; set; } = [];
 }
